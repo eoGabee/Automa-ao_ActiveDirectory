@@ -1,0 +1,11 @@
+GPO - (Group Policy Object) é uma ferramenta usada para definir regras que os objetos dentro da
+rede tem que seguir.
+o GPO é aplicado de forma centralizada, no nosso caso vai ser no AD.
+
+Para usar um script como GPO (Group Policy Object), você primeiro precisa criar o script e, em seguida, configurá-lo para ser executado no GPO. A GPO permite que você defina configurações centralizadas que são aplicadas a usuários e computadores em uma rede, e pode ser usada para executar scripts automaticamente. 
+
+PowerShell:
+
+É a linguagem mais moderna e poderosa para criar scripts para GPOs. Permite automatizar tarefas, gerenciar configurações e aplicar políticas de forma flexível. 
+
+Para agendar scripts no Active Directory (AD), você pode usar o Agendador de Tarefas do Windows, que permite criar tarefas que serão executadas em um horário ou evento específico. O Agendador de Tarefas pode ser acessado através do menu Iniciar ou através do comando taskschd.msc
