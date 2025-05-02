@@ -8,7 +8,7 @@ Import-Csv "C:\caminho\usuarios_ferias.csv" | ForEach-Object { #a cada linha do 
     if ($user) {
         # Define a data de expiração da conta
         Set-ADUser -Identity $_.Username -AccountExpirationDate ([datetime]::Parse($_.EndDate))
-        # Desativa a conta manualmente se desejar
+        # Desativa a conta manualmente
         Disable-ADAccount -Identity $_.Username
         Write-Host "Usuário $($_.Username) desativado até $($_.EndDate)"
     } else {
